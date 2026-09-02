@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2A2530 transparent;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2A2530; border-radius: 3px; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #0D0B0E;
+  color: #F5F0EB;
+  overflow: hidden;
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Animaciones */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 15px rgba(245,158,11,0.2); }
+  50% { box-shadow: 0 0 30px rgba(245,158,11,0.4); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.animate-pulse-glow { animation: pulseGlow 2s infinite; }
+.animate-shimmer {
+  background: linear-gradient(90deg, #1A1720 25%, #221F2A 50%, #1A1720 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+.animate-fade-in { animation: fadeIn 0.4s ease-out; }
+.animate-slide-in { animation: slideIn 0.3s ease-out; }
+
+/* Glass */
+.glass {
+  background: rgba(26, 23, 32, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid #2A2530;
+  border-radius: 12px;
+}
+.glass-sm {
+  background: rgba(26, 23, 32, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid #2A2530;
+  border-radius: 8px;
+}
+
+/* Range slider */
+input[type="range"] {
+  -webkit-appearance: none;
+  background: #2A2530;
+  height: 6px;
+  border-radius: 3px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #F59E0B;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(245,158,11,0.4);
+}
+
+/* Ruido de fondo */
+.bg-noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

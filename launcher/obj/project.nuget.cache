@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "2Ul2QdTmnD8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\JEAN PAUL\\Desktop\\IA\\ai-story-studio\\launcher\\AIStoryStudio.Launcher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JEAN PAUL\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.27\\microsoft.net.illink.tasks.8.0.27.nupkg.sha512",
+    "C:\\Users\\JEAN PAUL\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.27\\microsoft.netcore.app.runtime.win-x64.8.0.27.nupkg.sha512",
+    "C:\\Users\\JEAN PAUL\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.27\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.27.nupkg.sha512",
+    "C:\\Users\\JEAN PAUL\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.27\\microsoft.aspnetcore.app.runtime.win-x64.8.0.27.nupkg.sha512"
+  ],
+  "logs": []
+}

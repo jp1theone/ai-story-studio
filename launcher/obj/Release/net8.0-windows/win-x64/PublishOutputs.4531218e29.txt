@@ -1,0 +1,7 @@
+C:\Users\JEAN PAUL\Desktop\IA\ai-story-studio\launcher\publish\AIStoryStudio.Launcher.pdb
+C:\Users\JEAN PAUL\Desktop\IA\ai-story-studio\launcher\publish\D3DCompiler_47_cor3.dll
+C:\Users\JEAN PAUL\Desktop\IA\ai-story-studio\launcher\publish\PenImc_cor3.dll
+C:\Users\JEAN PAUL\Desktop\IA\ai-story-studio\launcher\publish\PresentationNative_cor3.dll
+C:\Users\JEAN PAUL\Desktop\IA\ai-story-studio\launcher\publish\vcruntime140_cor3.dll
+C:\Users\JEAN PAUL\Desktop\IA\ai-story-studio\launcher\publish\wpfgfx_cor3.dll
+C:\Users\JEAN PAUL\Desktop\IA\ai-story-studio\launcher\publish\AIStoryStudio.Launcher.exe
