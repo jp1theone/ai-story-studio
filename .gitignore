@@ -22,3 +22,14 @@ dist/
 
 models/
 
+
+**/__pycache__/
+
+*.tsbuildinfo
+
+*.d.ts
+
+
+comfyui/ComfyUI/
+comfyui/*.log
+
